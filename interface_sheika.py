@@ -2,6 +2,7 @@
 # Chargement du module tkinter
 from tkinter import * # pour Python2 ce serait Tkinter
 
+# léaon est passé par la
 # Construction de la fenêtre principale «window»
 window = Tk()
 window.title('Language Sheika')
