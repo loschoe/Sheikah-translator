@@ -66,7 +66,7 @@ text_fr.grid(row=10, column=3, sticky=N)
 # Création du bouton "Traduire "
 ### JE VOUDRAIS L'ESPACER !!!!!!
 trad_bouton = Button(window, text="Traduire", font=("Arial", 25), bg= 'white', fg= 'darkgreen')
-trad_bouton.grid(row=12, column= 3, sticky=N)
+trad_bouton.grid(row=30, pady=20, column= 3, sticky=N)
 
 
 
