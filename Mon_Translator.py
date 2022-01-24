@@ -16,14 +16,9 @@ def oppen_tres_tuto():
 # Définition de la reconnaissance des lettres 
 def getEntry():
     Detection = myEntry.get()
-    print(Detection)
-    # LE PRINT DETECTION C'est juste pour le test !!
-
-
-# Définition des events pour la lettre A 
-### PAS FINI !!!!! #####
-
-# FAIRE LES AUTRES LETTRES !!!
+    maListe=[i for i in Detection]
+    print (maListe)
+    # LE PRINT maListe C'est juste pour le test !!
 
 # création de la fenetre (window) 
 window = Tk()
@@ -52,7 +47,6 @@ window.config (background= 'darkgreen')
 
 # Code pour image de la lettre A
 ############################################################################
-
 # PAS FONCTIONNEL #
 
 #width = 15
@@ -90,11 +84,11 @@ quit_bouton.grid(row=0, column=1, sticky=W)
 
 # ajouter de la "zone de texte" à la fenetre (window) 
 # Alligné !!
-
 myEntry = Entry(window, width=40, font=("Arial", 20))
 myEntry.grid(row=10, column=3, sticky=N)
-# ###########################################################################
 #height=4, 
+# ###########################################################################
+
 # ajouter lu bouton "Traduire " à la fenetre (window)
 # Alligné !!
 trad_bouton = Button(window, text="Traduire", font=("Arial", 25), bg= 'white', fg= 'darkgreen', relief= 'raised', command=getEntry)
@@ -104,7 +98,6 @@ trad_bouton.grid(row=30, pady=20, column= 3, sticky=N)
 # afficher la frame
 #frame.grid(row=13, column=3, sticky=N)
 ############################################################################
-
 # afficher la fenetre (window)
 window.mainloop()
 
