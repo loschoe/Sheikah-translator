@@ -22,10 +22,21 @@ def oppen_tres_tuto():
 def getEntry():
     Detection = myEntry.get()
     maListe=[i for i in Detection]
-    print (maListe)
+    ptndelongueure = len(maListe)
+    print(ptndelongueure)
+    print(maListe)
+    for i in maListe:
+    	print(i)
+
+    """
+ 	Lettres_présentes=[maListe]
+ 	if "a" in Lettres_présente:
+    	print ("Enfin !")
+    	print (maListe)*
+	"""
 
     # LE PRINT maListe C'est juste pour le test !!
-
+# je test le canvas 
 
 # création de la fenetre (window) 
 window = Tk()
@@ -44,27 +55,6 @@ window.config (background= ColorBG)
 #tree = ttk.Treeview(frame, columns = (1,2,3), height = 5, show = "headings")
 #tree.pack(side = 'left')
 #############################################################################
-# AFFICHER UNE IMAGE A REVOIR !!!!
-
-#photo = PhotoImage(file='lettre-B.gif')
-#Canevas = Canvas(window)                 
-#Canevas.config(height=photo.height(),width=photo.width())   
-#Canevas.create_image(300 ,100, anchor=W,image=photo)              
-#Canevas.grid(row=35, pady=25, columnspan=2, sticky=W)
-
-# Code pour image de la lettre A
-############################################################################
-# PAS FONCTIONNEL #
-
-#width = 15
-#height = 15
-
-#image = PhotoImage(file='A.png')
-#canvas = Canvas(window, width=width, height=height, bg=ColorBG
-#canvas.create_image(image)
-#canvas.grid(row=35, column=2, sticky=W)
-############################################################################
-
 
 # ajouter le "titre" de la fenetre (window)
 # Alligné !!
