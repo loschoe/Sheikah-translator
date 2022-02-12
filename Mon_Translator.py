@@ -47,7 +47,7 @@ window.geometry("1080x720")
 window.minsize(480, 360)
 window.iconbitmap('logointerface.ico')
 window.config (background= ColorBG)
-#window.config(bg=PhotoImage(file='Le_fond.jpg'))
+# changer peut-être le fond par une image
 
 # creation de la frame (INNUTILE PUISQUE J'UTILISE .GRID)
 #############################################################################
