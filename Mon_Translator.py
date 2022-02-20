@@ -28,12 +28,6 @@ def getEntry():
     for i in maListe:
     	print(i)
 
-    """
- 	Lettres_présentes=[maListe]
- 	if "a" in Lettres_présente:
-    	print ("Enfin !")
-    	print (maListe)*
-	"""
 
     # LE PRINT maListe C'est juste pour le test !!
 # je test le canvas 
@@ -59,38 +53,38 @@ window.config (background= ColorBG)
 # ajouter le "titre" de la fenetre (window)
 # Alligné !!
 label_title = Label (window, text="Bienvenue sur le translator", font=("Arial", 30), bg= ColorBG, fg= ColorText)  
-label_title.grid(row=0, column=3 , sticky=N)
+label_title.grid(row=0, column=2 , sticky=N)
 ############################################################################
 
 # ajouter d'un "texte" à la fenetre (window)
 # Alligné !!
 label_subtitle = Label (window, text="Découvre comment il fonctionne et traduit tes messages en Sheikah", font=("Arial", 15), bg= ColorBG, fg= ColorText)  
-label_subtitle.grid(row=2, column=3, sticky=N)
+label_subtitle.grid(row=1, column=2, sticky=N)
 ############################################################################
 
 # ajouter le bouton "Aides au codage" à la fenetre (window)
 # Alligné !!
 yt_bouton= Button(text="Aides au codage", font=("Arial", 15), bg= ColorButon, fg= ColorBG, command=lambda:[oppen_graven_tuto(), oppen_second_tuto(), oppen_tres_tuto()]) 
-yt_bouton.grid(row=0, column=2, sticky=W)
+yt_bouton.grid(row=0, column=1, sticky=W)
 ############################################################################
 
 # ajouter le bouton pour "fermer la page" à la fenetre (window)
 # Alligné !!
 quit_bouton = Button(text="Fermer", font=("Arial", 15), bg= ColorButon, fg= ColorBG, command=window.quit)  
-quit_bouton.grid(row=0, column=1, sticky=W)
+quit_bouton.grid(row=0, column=0, sticky=W)
 ############################################################################
 
 # ajouter de la "zone de texte" à la fenetre (window) 
 # Alligné !!
 myEntry = Entry(window, width=40, font=("Arial", 20))
-myEntry.grid(row=10, column=3, sticky=N)
+myEntry.grid(row=2, column=2, sticky=N)
 #height=4, 
 # ###########################################################################
 
 # ajouter lu bouton "Traduire " à la fenetre (window)
 # Alligné !!
 trad_bouton = Button(window, text="Traduire", font=("Arial", 25), bg= ColorButon, fg= ColorBG, relief= 'raised', command=getEntry)
-trad_bouton.grid(row=30, pady=20, column= 3, sticky=N)
+trad_bouton.grid(row=3, pady=20, column= 2, sticky=N)
 ############################################################################
 
 # afficher la frame
